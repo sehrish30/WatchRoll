@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Youtube Clone</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media-style.css">
+    </head>
+    <body>
+    <header>
+        <a href="#">
+            <img src="img/logo.png" alt="Lyrad Digital"/>
+        </a>
+        <h1>Watch Roll</h1>
+        <img id="search-videos-icon" src="img/search.svg" alt="Search Videos"/>
+        <img id="settings-icon" src="img/more.svg" alt="Menu"/>
+    </header>
+    <main>
+        <div id="video-thumbnail">
+            <img src="img/thumbnail.jpg" alt="Video Thumbnail">
+        </div>
+        <section id="video-details">
+            <header>
+                <h2>Learn Photography with me!</h2>
+                <div id="videos-views-count">1M views</div>
+            </header>
+            <div id="social-container">
+                <div class="social-item active">
+                    <img src="img/like.svg" alt="thumbs up"/>
+                    <p class="social-item-title">500K</p>
+                </div>
+                <div class="social-item">
+                    <img src="img/dislike.svg" alt="thumbs down"/>
+                    <p class="social-item-title">1K</p>
+                </div>
+                <div class="social-item">
+                    <img src="img/share.svg" alt="Share"/>
+                    <p class="social-item-title">Share</p>
+                </div>
+                <div class="social-item">
+                    <img src="img/download.svg" alt="Save video"/>
+                    <p class="social-item-title">Download</p>
+                </div>
+                <div class="social-item">
+                    <img src="img/add.svg" alt="Add video"/>
+                    <p class="social-item-title">Save</p>
+                </div>
+            </div>
+            <div id="channel-details">
+                <a href="#">
+                    <img src="img/how-to-anything.png" alt="channel name">
+                    <div id="channel-metadata">
+                        <h3>Photography nerds</h3>
+                        <div id="channel-subscriber-count">2M subscribers</div>
+                    </div>
+                </a>
+                <button>
+                    <img src="img/logo.png" alt="videos"/>
+                    <span>Subscribe</span>
+                </button>
+            </div>
+        </section>
+        <aside id="related-videos">
+            <header>
+                <div>Up Next</div>
+                <div>Autoplay</div>
+                <button>
+                    <span class="autoplay-slider"></span>
+                    <span class="autoplay-slider-toggle-button"></span>
+                </button>
+            </header>
+            <ul>
+                <li>
+                    <a href="#" title="How to do eye makeup?">
+                        <article>
+                            <img src="img/model.jpg" alt="makeup">
+                            <h4>Tips for eye-makeup</h4>
+                            <p>Makeup-studio</p>
+                            <p>22K views . 2 hrs ago </p>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="How to do eye makeup?">
+                        <article>
+                            <img src="img/office.jpg" alt="makeup">
+                            <h4>How to avoid procastination?</h4>
+                            <p>Focus centre</p>
+                            <p>1K views . 16 hrs ago </p>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="How to do eye makeup?">
+                        <article>
+                            <img src="img/kids.jpg" alt="makeup">
+                            <h4>Make your kids future bright!</h4>
+                            <p>kids Channel</p>
+                            <p>1M views . July 16, 2020</p>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="How to do eye makeup?">
+                        <article>
+                            <img src="img/digital.jpg" alt="makeup">
+                            <h4>Digital Marketing</h4>
+                            <p>John Roye</p>
+                            <p>1K views . July 11, 2020</p>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="How to do eye makeup?">
+                        <article>
+                            <img src="img/cyber.jpg" alt="makeup">
+                            <h4>Cyber security tricks</h4>
+                            <p>Security</p>
+                            <p>100 views . 16 min ago</p>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <section id="video-comments">
+            <header>
+                <h2>Comments &middot; 3</h2>
+                <img id="comment-downtick" src="img/down.svg" alt="Show comments"/>
+                <img id="comment-uptick" src="img/up.svg" alt="Hide Comments"/>
+            </header>
+            <div id="comment-list-container">
+                <div id="comment-form">
+                    <img src="img/kim.jpeg" alt="Kim">
+                    <textarea placeholder="Add a public comment"></textarea>
+                </div>
+
+                <div id="comment-list">
+                    <div class="comment my-comment">
+                        <img src="img/how-to-anything.png" alt="kim"/>
+                        <a href="#" title="How to Anything">
+                            <span>Photography nerds</span>
+                        </a>
+                        <p>Do not hesitate to let let me know your opinion on my video. Thank you</p>
+                        <div class="comment-statistics">
+                            <p>1 week ago</p>
+                            <p class="comment-status-separator">&middot;</p>
+                            <p>301</p>
+                            <img src="img/like.svg" alt="thumbs up">
+                            <img src="img/dislike.svg" alt="thumbs up">
+                        </div>
+                    </div>
+                    
+                    <div class="comment my-comment">
+                        <img src="img/douglas.png" alt="kim"/>
+                        <a href="#" title="How to Anything">
+                            Hamza Ali
+                        </a>
+                        <p>Can you provide more camera details?</p>
+                        <div class="comment-statistics">
+                            <p>1 week ago</p>
+                            <p class="comment-status-separator">&middot;</p>
+                            <p>19</p>
+                            <img src="img/likee.svg" alt="thumbs up">
+                            <img src="img/dislike.svg" alt="thumbs up">
+                        </div>
+                        <div class="see-response-container">
+                            <button>
+                                <span>1 reply</span>
+                            </button>
+                        </div>
+
+                        <div class="response-list">
+                            <div class="comment response my-comment">
+                                <img class="small" src="img/undraw.png" alt="kim"/>
+                                <a href="#" title="How to Anything">
+                                    Tech guy
+                                </a>
+                                <p>Canva 2582</p>
+                                <div class="comment-statistics">
+                                    <p>2 hrs ago</p>
+                                    <p class="comment-status-separator">&middot;</p>
+                                    <p>1</p>
+                                    <img src="img/likee.svg" alt="thumbs up">
+                                    <img src="img/dislike.svg" alt="thumbs up">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="comment my-comment">
+                        <img src="img/kim.jpeg" alt="kim"/>
+                        <a href="#" title="How to Anything">
+                            Anne Halley
+                        </a>
+                        <p>Enjoyed Your course.</p>
+                        <div class="comment-statistics">
+                            <p>12 hrs ago</p>
+                            <p class="comment-status-separator">&middot;</p>
+                            <p>3</p>
+                            <img src="img/like.svg" alt="thumbs up">
+                            <img src="img/dislike.svg" alt="thumbs up">
+                        </div>
+                        <div class="see-response-container">
+                            <button>
+                                <span>2 replies</span>
+                            </button>
+                        </div>
+
+                        <div class="response-list">
+                            <div class="comment response my-comment">
+                                <img class="small" src="img/undraw.png" alt="kim"/>
+                                <a href="#" title="How to Anything">
+                                    Tech guy
+                                </a>
+                                <p>Good for you</p>
+                                <div class="comment-statistics">
+                                    <p>2 hrs ago</p>
+                                    <p class="comment-status-separator">&middot;</p>
+                                    <p>1</p>
+                                    <img src="img/likee.svg" alt="thumbs up">
+                                    <img src="img/dislike.svg" alt="thumbs up">
+                                </div>
+                        </div>
+                        <div class="comment response my-comment">
+                            <img class="small" src="img/stan.jpeg" alt="kim"/>
+                            <a href="#" title="How to Anything">
+                                Tech guy
+                            </a>
+                            <p>Same here</p>
+                            <div class="comment-statistics">
+                                <p>2 hrs ago</p>
+                                <p class="comment-status-separator">&middot;</p>
+                                <p>1</p>
+                                <img src="img/likee.svg" alt="thumbs up">
+                                <img src="img/dislike.svg" alt="thumbs up">
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+
+    <script>
+        const downTickButton=document.getElementById('comment-downtick');
+        const upTickButton=document.getElementById('comment-uptick');
+        const commentListContainer= document.getElementById('comment-list-container');
+
+        downTickButton.addEventListener('click', () =>{
+            downTickButton.style.display='none';
+            upTickButton.style.display="block";
+            commentListContainer.style.display="block";
+        });
+
+        upTickButton.addEventListener('click', ()=>{
+          downTickButton.style.display='block';
+          upTickButton.style.display="none";
+          commentListContainer.style.display="none";
+        })
+
+        const seeResponseButtons= document.querySelectorAll('.see-response-container button');
+        const closeResponseButtons= document.querySelectorAll('.close-response-container button');
+
+        seeResponseButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const container = button.parentElement;
+                const responseList = container.nextElementSibling;
+
+                container.style.display = 'none';
+                responseList.style.display = 'block';
+            });
+        });
+
+        closeResponseButtons.forEach(button=>{
+            button.addEventListener('click', ()=>{
+                const container=button.parentElement;
+                const responseList=container.previousElementSibling;
+
+                container.style.display="none";
+                responseList.style.display="none";
+            })
+        })
+
+
+        
+    </script>
+    </body>
+</html>

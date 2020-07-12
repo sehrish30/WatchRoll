@@ -1,0 +1,153 @@
+:root{
+    --highlight-font: 'Crimson Text', serif;
+    --main-font:  'Karla', sans-serif;
+    --main-color:#DD2121; 
+    --primary-color: #AA0606;
+    --secondary-color: #DFBE2E;
+    --grey-color: #B0AB97;
+}
+
+@media(min-width: 550px){
+    #related-videos>ul{
+        padding: 0 8px;
+        display:grid;
+        grid: auto-flow max-content/ repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+
+    #related-videos>ul>li article{
+     min-height: inherit;
+     max-height: inherit;
+     display: block;
+    }
+
+    #related-videos >ul>li{
+        margin-bottom: 0;
+    }
+
+    #related-videos>ul>li img{
+        height: 26.6vw;
+        min-height: 141px;
+        max-height: 202px;
+    }
+    .related-video-details h4{
+        padding-top: 4px;
+    }
+
+    main{
+        grid-template-areas:
+            'video-thumbnail'
+            'video-details'
+            'video-comments'
+            'related-videos';
+    }
+
+    #related-videos{
+        border-bottom: 0;
+    }
+
+    #video-comments{
+        border-bottom: 1px solid var(--secondary-color);
+    }
+}
+
+@media(min-width: 768px){
+
+    #related-videos>ul{
+        grid-template-columns:repeat(3, 1fr);
+    }
+    #related-videos>ul>li img{
+        height: 17.5vw;
+        min-height: 131px;
+        max-height: inherit;
+    }
+}
+
+@media(min-width: 800px) and (orientation: landscape){
+    
+       body>header{
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        right: 0;
+        height: 4.5rem;
+        grid: 1fr/ 3rem 1fr 50px 38px;
+    }
+
+    main{
+        grid:
+            'video-thumbnail related-videos'max-content
+             'video-details related-videos'max-content
+             'video-comments related-videos' 1fr
+             /1fr 256px;
+             margin-top: 4.3rem;
+    }
+    #related-videos{
+        padding-left: 8px;
+        padding-right: 8px;
+        overflow: scroll;
+        position: fixed;
+        width: 256px;
+        top: 4.3rem;
+        right: 0;
+        bottom: 0;
+    }
+
+    #related-videos>ul{
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #related-videos>ul>li img{
+        height: 135px;
+        min-height: inherit;
+        max-height: inherit;
+    }
+
+    #video-comments{
+        border-bottom:0;
+    }
+}
+
+@media(min-width: 1280px) and (orientation: landscape){
+    main{
+        grid-template-columns: 1fr 500px;
+    }
+
+    #related-videos{
+        width: 31.25rem;
+    }
+
+    #related-videos > ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #related-videos >ul> li h4, h3{
+        font-size: 1.3rem;
+    }
+
+    #related-videos >ul> li p{
+        font-size: 1rem;
+    }
+
+    #video-comments h2{
+        font-size: 1.8rem;
+    }
+
+    #channel-subscriber-count{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 2.3rem;
+    }
+    #comment-downtick {
+        height: 1.5rem;
+        width: 1.5rem;
+
+    }
+
+ 
+    h1{
+        font-size: 2rem;
+    }
+}

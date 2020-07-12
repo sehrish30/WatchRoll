@@ -1,0 +1,462 @@
+:root{
+    --highlight-font: 'Crimson Text', serif;
+    --main-font:  'Karla', sans-serif;
+    --main-color:#DD2121; 
+    --primary-color: #AA0606;
+    --secondary-color: #DFBE2E;
+    --grey-color: #B0AB97;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:grid;
+    grid: 4rem 1fr / 1fr;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-left: 1rem;
+    font-family: var(--main-font);
+    color: var(--secondary-color);
+}
+
+body > header {
+    display: grid;
+    grid: 1fr/32px 1fr 28px 28px;
+    grid-column-gap: 12px;
+    align-items: center;
+    padding: 0 1rem;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+body > header > a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+html,body{
+    height: 100%;
+}
+
+#search-videos-icon,
+#settings-icon{
+    padding-left:.27rem;
+    width: 1.7rem;
+}
+
+main{
+    display:grid;
+    grid: 
+        'video-thumbnail' max-content
+        'video-details' max-content
+        'related-videos' max-content
+        'video-comments' max-content
+        /1fr;
+}
+
+#video-thumbnail{
+    grid-area: video-thumbnail;
+}
+
+#video-thumbnail>img{
+    width: 100%;
+    height:50%;
+}
+
+#video-details{
+    grid-area: video-details;
+    padding-top: 0.5rem;
+}
+
+#video-details>header,
+#related-videos
+{
+    padding: 0 12px;
+}
+
+#related-videos{
+    grid-area: related-videos;
+}
+
+
+
+h2{
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    margin-bottom: 3px;
+    font-weight: normal;
+    font-family: var(--highlight-font);
+    color: var(--secondary-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+    font-size: 0.8rem;
+}
+
+#videos-views-count{
+    font-size: 1.2rem;
+    color: #B0AB97;
+    font-family: var(--main-font);
+}
+
+#social-container{
+    padding: 0.8rem 0;
+    display: grid;
+    grid: 1fr/ repeat(5, 1fr);
+}
+
+.social-item{
+    color: var(--grey-color);
+    display: grid;
+    justify-items: center;
+    row-gap: 7px;
+}
+
+.social-item.active{
+    color: var(--secondary-color);
+}
+
+.social-item>p{
+    font-size: 1rem;
+}
+
+.social-item>img{
+    width: 3rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+#channel-details{
+    padding: 0.8rem;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    display: grid;
+    grid: 1fr/ 1fr 114px;
+    column-gap: 8px;
+    align-items: center;
+}
+
+#channel-details>a{
+    display: grid;
+    grid: 1fr/ 34px 1fr;
+    grid-column-gap: 12px;
+    align-items: center;
+}
+
+#channel-details img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#channel-subscriber-count{
+    color: var(--grey-color);
+    font-size: 0.8rem;
+}
+
+#channel-details button{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+    outline: none;
+    border: none;
+    background:transparent;
+    font-size: 1.4rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    outline: none;
+    text-decoration: underline;
+    font-family: var(--highlight-font);
+}
+
+#channel-details button > img{
+    height: 1.5rem;
+}
+
+#related-videos{
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#related-videos> header{
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    display: grid;
+    grid: 1fr/ 1fr repeat(2, max-content);
+    align-items: center;
+    column-gap: 8px;
+}
+
+#related-videos> header button{
+    width: 2.31rem;
+    height: 1rem;
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: relative;
+}
+
+.autoplay-slider{
+    display: block;
+    width: 37px;
+    height: 14px;
+    border: 10px solid var(--secondary-color);
+    border-radius: 7px;
+    opacity: 0.6;
+}
+
+.autoplay-slider-toggle-button{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 0.5px 2px var(--primary-color);
+}
+
+#related-videos> ul> li{
+   margin-bottom: 12px;
+   list-style: none;
+}
+
+#related-videos> ul> li:last-of-type{
+    margin-bottom: 0;
+}
+
+#related-videos> ul> li article{
+    min-height: 90px;
+    max-height: 90px;
+    overflow-y: hidden;
+    display: grid;
+    grid: repeat(2, max-content)/160px 1fr;
+    column-gap: 8px;
+}
+
+#related-videos >ul>li img{
+    grid-row: span 3;
+    height: 100%;
+    width: 100%;
+}
+
+#related-videos >ul> li h4{
+ max-height: 3.75rem;
+ display: -webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+#related-videos > ul> li p{
+    font-size : 0.7rem;
+    color: var(--secondary-color);
+    opacity: 0.9;
+}
+
+ h4{
+
+    margin-bottom: 2px;
+    font-size: 1rem;
+    font-family: var(--highlight-font);
+}
+
+div{
+    color: var(--grey-color);
+}
+
+#video-comments{
+    grid-area: video-comments;
+    padding: 12px 12px;
+}
+
+#video-comments> header{
+    display:grid;
+    grid: 1fr / 1fr 24px;
+    align-items: center;
+}
+
+#comment-downtick, #comment-uptick{
+    height:1rem;
+    width: 1rem;
+}
+
+#video-comments h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: var(--highlight-font);
+}
+
+#comment-uptick,
+#comment-list-container{
+    display: none;
+    color: var(--main-color);
+}
+
+#comment-form{
+    margin-top: 1rem;
+    padding: 12px;
+    border-bottom: 1px solid var(--secondary-color);
+    display: grid;
+    grid: 1fr/ 48px 1fr;
+    column-gap: 8px;
+}
+
+#comment-form img,
+.comment-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+#comment-form textarea{
+    padding: 6px;
+    outline: none;
+    color: var(--main-color);
+    font-size: 1.4rem;
+    resize: vertical;
+    border: 1px solid var(--main-color);
+}
+
+#comment-form textarea::placeholder{
+    color: var(--grey-color);
+    opacity: 0.8;
+}
+
+.comment{
+    padding: 12px;
+    font-size: 1.1rem;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--secondary-color);
+    display: grid;
+    grid: repeat(3, max-content) /48px 1fr;
+    column-gap: 8px;
+}
+
+.comment>img{
+    grid-row: span 3;
+    border-radius: 50%;
+}
+
+.comment:last-of-type{
+    border-bottom: none;
+}
+
+.comment > a{
+    font-size: 1rem;
+    color: var(--main-color);
+    opacity: 0.6;
+}
+
+.my-comment>a>span{
+    background: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 8px;
+    padding: 1px 6px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.comment-statistics{
+    display:grid;
+    grid: 1fr / repeat(5, max-content);
+    column-gap: 0.4rem;
+}
+
+.comment> p{
+    color: var(--grey-color);
+    font-size: 1rem;
+    color: var(--main-color);
+    font-family: var(--highlight-font);
+    margin: 4px 0;
+}
+
+.comment-status-separator{
+    font-size: 2rem;
+    line-height: 1.5rem;
+}
+
+.comment-statistics>img{
+    margin-left: 8px;
+    width: 1.1rem;
+    height:1.1rem;
+}
+
+.see-response-container, 
+.response-list,
+.close-response-container{
+    grid-column: 2;
+
+}
+
+.see-response-container,
+.close-response-container{
+    display: grid;
+    justify-content: center;
+}
+
+.see-response-container>button{
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 10px 8px;
+}
+
+.response-list{
+    display: none;
+    margin-top: 15px;
+}
+
+.close-response-container>button{
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 10px 8px;
+}
+
+.small{
+    width: 3rem;
+    height: 4rem;
+}
+
+.response{
+    margin-bottom: 15px;
+    padding:0;
+    border-bottom: 0;
+    grid-template-columns: 2.5rem 1fr;
+}
+.reponse>img{
+    width: 26px;
+    height: 26px;
+}
+h3{
+    font-family: var(--highlight-font);
+    color: var(--secondary-color);
+}
+
+
